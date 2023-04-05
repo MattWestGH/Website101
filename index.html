@@ -16,7 +16,36 @@
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to my store</h1>
+      <h1 class="text-center py-3">Welcome to my store</h1>
+      <form onsubmit="return addItem(this);">
+        <div class="row">
+          <div class="col">
+            <label for="itemName">Item Name:</label>
+            <input
+              id="itemName"
+              type="text"
+              class="form-control"
+              placeholder="Item Name"
+              aria-label="Item Name"
+            />
+          </div>
+          <div class="col">
+            <label for="itemPrice">Item Price:</label>
+            <input
+              id="itemPrice"
+              type="text"
+              class="form-control"
+              placeholder="Item Price"
+              aria-label="Item Price"
+            />
+          </div>
+          <div class="col d-flex align-items-end">
+            <input class="btn btn-primary" type="submit" value="Add Item" />
+          </div>
+        </div>
+      </form>
+      <h3 id="totalPrice" class="text-center py-3">Total Price: $0</h3>
+      <ul id="list" class="list-group"></ul>
     </div>
     <script src="script.js"></script>
     <script
