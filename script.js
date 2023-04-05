@@ -13,3 +13,6 @@ function changeColorWhite() {
 function changeColorPink() {
   document.body.style.backgroundColor = "pink";
 }
+function changeColorYellow() {
+  document.body.style.backgroundColor = "yellow";
+}
