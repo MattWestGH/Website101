@@ -12,7 +12,7 @@ class Item {
 }
 
 function refreshUI() {
-  totalPriceElement.innerText = `Total price: $${totalPrice}`;
+  totalPriceElement.innerText = `Total Price: $${totalPrice}`;
   parentListElement.innerHTML = "";
   cart.forEach((item, index) => {
     const listElement = document.createElement("li");
