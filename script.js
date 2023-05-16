@@ -3,7 +3,6 @@ const parentListElement = document.getElementById("list");
 let totalPrice = 0;
 let cart = [];
 const totalpriceStorage = localStorage.getItem("totalPrice");
-
 class Item {
   constructor(name, price) {
     this.name = name;
